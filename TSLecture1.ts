@@ -39,3 +39,40 @@ console.log(sum1(5,5)); //this is correct .
 * 3. Statically types language.
 * 4. Provide new features  like -- interface , Type annotations and Type inference and many more.
 */
+//Can you tell me about this , why this not giving the error .
+let NanValue:number = NaN;
+console.log(NanValue);
+//console.log(NaN==number); Here both condition is giving false you know why because the number referred to
+//console.log(NaN===number); type not as the value , but here we are using as value.
+
+//let Nanvalue:NaN = number; This is same as previous one here we are referring the number as the value.
+
+
+//Ok , let me tell you , because the "Nan" in ts and js is the type of the number ,Because of that it is 
+// not giving any of the errors.It is used to indicate that the given value is not the valid number , 
+//Usually as the result of the invalid operations.
+
+
+//Tasks 1. ---------------------------------------------------------------------------------------
+/* Declare the variable using the name of the longtext and  extract the first 10 characters and store 
+*them into the shorttext variable .*/
+let longtext: string = "Usually as the result of the invalid operations";
+let shorttext:string = longtext.slice(0,10);
+console.log(shorttext);
+
+//Task 2.-----------------------------------------------------------------------------------------
+/* Decalre the variable str1 and str2 and compare them and store the result in the form of 
+*(true & false) and return the result */
+let str1:string = "I am the one";
+let str2:string = "I am the one";
+
+let str3:boolean = (str1==str2);
+console.log(str3);
+
+//Task 3.--------------------------------------------------------------------------------------------
+/* Declare two vriable product and price , respectively the type is the string and number and return the 
+*result in the form of string literals , The product {product} and is priced {price} at dollers .*/
+let product:string = "Oppo A-54";
+let price:number = 12540;
+let strliterals:string = `The product is ${product} and is priced ${price} at dollers .`;
+console.log(strliterals);
