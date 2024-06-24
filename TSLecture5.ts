@@ -97,3 +97,52 @@ console.log(product1);//{ name: 'Sachin Gupta', price: 100, quantity: '2kg' }
 console.log(product1.name);//Sachin Gupta
 console.log(product1.price);//Random value , again and again .
 console.log(product1.quantity);//Random kg as well each and every time .
+
+//----------------------------------Type Alias-----------------------------------------------------------
+/* Type Alias in ts , is a way to give a name to a specific type or combination of types.It allows us
+to create custom names for a type , making it easier to reuse and refer to the same type in different 
+parts of our code .Type alias provide better readability , organization and abstraction of complex types.*/
+
+//To define alias type , we use the type keyword followed by the alas name & type definition .
+
+type product1 ={
+    name:string,
+    age:number,
+    address:string,
+}
+
+let product2:product1 = {
+    name:"Sachin Gupta",
+    age:23,
+    address:"Umaria",
+}
+console.log(`The name is ${product2.name} and age is ${product2.age}`);
+console.log("Product 2 :--",product2);
+
+let product3:product1 = {
+    name:"Rishi ",
+    age:23,
+    address:"Bhopal"
+}
+console.log(`The name is ${product3.name} and age is ${product3.age}`);
+console.log("Product 3 :--",product3);
+
+//we can update the data in same way -------------------------------------------------------
+product3.address = "Bhopal , AyodhyaByPass";
+console.log(product3);
+
+//----------------------------------------------Task ---------------------------------------------
+
+type CalculatePrice ={
+    ProductName:string,
+    Price:number,
+    quantity:number,
+}
+
+let productproduct:CalculatePrice={
+    ProductName:"OppoA54",
+    Price:100,
+    quantity:2,
+}
+console.log("Total price : --",(productproduct.Price*productproduct.quantity));
+console.log(productproduct);

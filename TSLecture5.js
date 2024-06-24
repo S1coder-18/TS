@@ -60,3 +60,27 @@ console.log(product1); //{ name: 'Sachin Gupta', price: 100, quantity: '2kg' }
 console.log(product1.name); //Sachin Gupta
 console.log(product1.price); //Random value , again and again .
 console.log(product1.quantity); //Random kg as well each and every time .
+var product2 = {
+    name: "Sachin Gupta",
+    age: 23,
+    address: "Umaria",
+};
+console.log("The name is ".concat(product2.name, " and age is ").concat(product2.age));
+console.log("Product 2 :--", product2);
+var product3 = {
+    name: "Rishi ",
+    age: 23,
+    address: "Bhopal"
+};
+console.log("The name is ".concat(product3.name, " and age is ").concat(product3.age));
+console.log("Product 3 :--", product3);
+//we can update the data in same way -------------------------------------------------------
+product3.address = "Bhopal , AyodhyaByPass";
+console.log(product3);
+var productproduct = {
+    ProductName: "OppoA54",
+    Price: 100,
+    quantity: 2,
+};
+console.log("Total price : --", (productproduct.Price * productproduct.quantity));
+console.log(productproduct);
