@@ -146,3 +146,10 @@ let productproduct:CalculatePrice={
 }
 console.log("Total price : --",(productproduct.Price*productproduct.quantity));
 console.log(productproduct);
+//Also we can pass the product as parameter and will get the result -----------------------------------
+
+const CalculateAverage1 = ((Cal:CalculatePrice) =>{
+    return productproduct.Price*productproduct.quantity;
+})
+
+console.log("The Total Price is :",CalculateAverage1(productproduct));
