@@ -22,7 +22,7 @@
    // and printing then it will return the ... length of that array .
    let xx = arr.unshift(7); //7
    console.log(xx);//7, same here as well 
-   console.log("Arrays",arr);
+   console.log("Arrays",arr);//7
    let t = arr.pop();
    console.log(t);//it returns the poped element.
 

@@ -90,7 +90,9 @@ const Student1 = (name:string,Role="Software engineer",age:number):string =>{
 // console.log(Student1("Sachin Gupta",23)); 
 // console.log(Student1("Sachin Gupta",23,"Software engineer at Epam"));
 
-
+//Task ---------------------------------------------------------------------------------------------
+/*Create a function CalculateAverage and take array in parameter and return the array as well from that 
+function */
 const calculateAverage = (nums: number[] ): void=>{
     var sum:number = 0;
       for(let i=0; i < nums.length;i++){

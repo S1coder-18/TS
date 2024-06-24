@@ -43,3 +43,17 @@ function ArrayNth(nums1:number[] , argu:number=1){
 
 console.log(ArrayNth([1, 2, 3, 4, 5, 6])); // [1,2,3,4,5,6]
 console.log(ArrayNth([1, 2, 3, 4, 5, 6], 3)); // [3,6]
+//-------------------------------------------Task 3--------------------------------------------------------------
+
+/* 
+Implement the logger function which will prepare data for logging. 
+It should have default service configuration {serviceName: 'global', serviceId: 1}
+
+For example:
+
+  // {"3-0":"[auth_service] Wrong email","3-1":"[auth_service] Wrong password","3-2":"[auth_service] Success login"}
+  logger(['Wrong email', 'Wrong password', 'Success login'], {serviceName: 'auth_service', serviceId: 3});
+
+  // {"1-0":"[global] Fatal error","1-1":"[global] Data corrupted"}
+  logger(['Fatal error', 'Data corrupted']);
+*/
