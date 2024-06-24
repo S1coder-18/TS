@@ -78,3 +78,18 @@ var display2 = function (person) {
     return "Product name is ".concat(name, " & price is ").concat(price, " and product quantity is ").concat(quantity, ".");
 };
 console.log(display2(person4));
+var weatherDataArray = [
+    ["Newyork", 30, "sunny"],
+    ["India", 40, "sunny"],
+    ["Newyork", 10, "cloudy"],
+];
+function DisplayWheather(weahtherdata) {
+    for (var _i = 0, weahtherdata_1 = weahtherdata; _i < weahtherdata_1.length; _i++) {
+        var _a = weahtherdata_1[_i], city = _a[0], Temperature = _a[1], condition = _a[2];
+        console.log("City: ".concat(city));
+        console.log("Temperature: ".concat(Temperature, "\u00B0C"));
+        console.log("Condition: ".concat(condition));
+        console.log('--------------------------');
+    }
+}
+DisplayWheather(weatherDataArray);

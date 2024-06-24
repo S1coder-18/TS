@@ -112,7 +112,7 @@ console.log(per1);
  */
 
 
-//-------------------------------------------Task----------------------------------------------------------
+//-------------------------------------------Task.1----------------------------------------------------------
 /**
  * Tuples in Typescript
  * ! Question 1:
@@ -148,3 +148,55 @@ const display2:(per2:any)=> void =(person:productInfo) =>{
 
 console.log(display2(person4));
 
+//-------------------------------------------Task.2-----------------------------------------------------------
+/**
+ * 
+ * ! Question 2:
+ * You are creating a student management system and want to keep track of student grades for different 
+ * subjects. Define a tuple type called SubjectGrade to represent a subject and its corresponding grade, 
+ * containing the following elements:
+
+Subject name (string)
+Grade (number)
+Create an array of SubjectGrade tuples to store the grades for a student in three different subjects:
+Math, English, and Science. Calculate and display the average grade for the student.
+
+ */
+
+
+
+
+
+//-------------------------------------------Task.3-------------------------------------------------------
+/**
+ * 
+//! Question 3:
+// You are working on a weather application, and you need to store weather data for different cities. 
+Define a tuple type called WeatherData to represent the weather information, containing the following elements:
+
+// City name (string)
+// Temperature in Celsius (number)
+// Weather condition (string)
+// Create a function called displayWeather that takes an array of WeatherData tuples as input and displays 
+//the weather information for each city in a user-friendly format.
+ */
+type WeatherData = [string,number,string];
+
+let weatherDataArray:WeatherData[] =[
+    ["Newyork",30,"sunny"],
+    ["India",40,"sunny"],
+    ["Newyork",10,"cloudy"],
+
+
+];
+
+function DisplayWheather(weahtherdata:WeatherData[]):void{
+    for(let[city,Temperature,condition]of weahtherdata){
+        console.log(`City: ${city}`);
+        console.log(`Temperature: ${Temperature}°C`);
+        console.log(`Condition: ${condition}`);
+        console.log('--------------------------');
+    }
+}
+
+DisplayWheather(weatherDataArray);
